@@ -1,0 +1,8 @@
+main:
+  project_name: RP_NVIDIA_Machine_Learning
+  experiment_name: Student Performance Classification
+execute:
+  - dataloader
+  - preprocess
+  - dataval
+  - segregate 

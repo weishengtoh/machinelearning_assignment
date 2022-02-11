@@ -1,0 +1,7 @@
+name: data_validation
+conda_env: conda.yml
+
+entry_points:
+  main:
+    command: >-
+      pytest -s -vv .

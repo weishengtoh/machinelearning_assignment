@@ -1,0 +1,7 @@
+name: preprocess_data
+conda_env: conda.yml
+
+entry_points:
+  main:
+    command: >-
+      python preprocess_pipeline.py

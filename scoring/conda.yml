@@ -1,0 +1,15 @@
+name: scoring
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip=20.3.3
+  - mlflow=1.23.1
+  - hydra-core=1.1.1
+  - scikit-learn=1.0.2
+  - matplotlib=3.2.2
+  - pillow=8.1.2
+  - pip:
+      - wandb==0.12.10
+      - hydra-joblib-launcher==1.1.2

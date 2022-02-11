@@ -1,0 +1,7 @@
+name: scoring
+conda_env: conda.yml
+
+entry_points:
+  main:
+    command: >-
+      python scoring_pipeline.py

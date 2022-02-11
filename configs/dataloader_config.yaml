@@ -1,0 +1,10 @@
+main:
+  project_name: RP_NVIDIA_Machine_Learning
+  experiment_name: Student Performance Classification
+  job_type: load_data
+parameters:
+  file_url: https://archive.ics.uci.edu/ml/machine-learning-databases/00320/student.zip
+  artifact_name: student-mat.csv
+  artifact_type: raw_data_maths
+  artifact_description: Raw data for maths dataset
+  output_folder: raw

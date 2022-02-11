@@ -1,0 +1,12 @@
+name: inference
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      hydra_options:
+        description: Parameters to override for hyperparameter sweep
+        type: str
+        default: ''
+    command: >-
+      python inference_pipeline.py $(echo {hydra_options})

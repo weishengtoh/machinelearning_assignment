@@ -1,0 +1,10 @@
+main:
+  project_name: RP_NVIDIA_Machine_Learning
+  experiment_name: Student Performance Classification
+  job_type: preprocess
+parameters:
+  input_artifact: student-mat.csv:latest
+  artifact_name: student-maths-clean.csv
+  artifact_type: dataset
+  output_folder: clean
+  artifact_descript: Preprocessed data

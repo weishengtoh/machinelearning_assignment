@@ -1,0 +1,7 @@
+name: segregate_data
+conda_env: conda.yml
+
+entry_points:
+  main:
+    command: >-
+      python segregate_pipeline.py 

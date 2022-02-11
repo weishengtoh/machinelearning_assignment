@@ -1,0 +1,13 @@
+main:
+  project_name: RP_NVIDIA_Machine_Learning
+  experiment_name: Student Performance Classification
+  job_type: segregate
+parameters:
+  input_artifact: student-maths-clean.csv:latest
+  artifact_rootname: student_maths
+  artifact_type: dataset
+  test_size: 0.1
+  val_size: 0.1
+  random_state: 42
+  stratify: third_grade
+  output_folder: segregated

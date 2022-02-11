@@ -1,0 +1,15 @@
+name: main
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      hydra_options:
+        description: Hydra parameters to override
+        type: str
+        default: ''
+      config_name:
+        description: Name of the config file to load
+        type: str
+    command: >-
+      python main.py --config_name {config_name}

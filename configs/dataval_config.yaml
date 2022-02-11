@@ -1,0 +1,6 @@
+main:
+  project_name: RP_NVIDIA_Machine_Learning
+  experiment_name: Student Performance Classification
+  job_type: data_validation
+parameters:
+  artifact_name: student-maths-clean.csv:latest

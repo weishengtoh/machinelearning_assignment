@@ -1,0 +1,13 @@
+main:
+  project_name: RP_NVIDIA_Machine_Learning
+  experiment_name: Student Performance Classification
+  job_type: score
+data:
+  test_data: student_maths_test.csv:latest
+scoring_pipeline:
+  scoring_model: svm_model:latest
+  features:
+    target_var: third_grade
+    target_bins_labels:
+    - pass
+    - fail

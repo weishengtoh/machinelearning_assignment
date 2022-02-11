@@ -1,0 +1,78 @@
+main:
+  project_name: RP_NVIDIA_Machine_Learning
+  experiment_name: Student Performance Classification
+  job_type: train
+data:
+  train_data: student_maths_train.csv:latest
+  val_data: student_maths_val.csv:latest
+inference_pipeline:
+  model_params:
+    C: 2.0
+    kernel: rbf
+    degree: 0
+    gamma: 0.5
+    coef0: 0.0
+    shrinking: True
+    probability: True
+    cache_size: 200
+    verbose: False
+    max_iter: -1
+    decision_function_shape: ovr
+    break_ties: False
+    random_state: 42
+  grid_search:
+    classifier__C: 
+      - 0.0001 
+      - 2
+      - 4
+      - 6
+      - 8
+    classifier__gamma: 
+      - 0.001953125
+      - 0.0078125
+      - 0.03125
+      - 0.125
+      - 0.5
+  features:
+    numerical_var:
+      - age
+      - num_school_absences
+      - first_grade
+      - second_grade
+    nominal_var:
+      - school
+      - sex
+      - address
+      - fam_size
+      - parents_cohabit
+      - mother_job
+      - father_job
+      - reason_for_school
+      - guardian
+      - extra_edu_support
+      - fam_edu_support
+      - extra_paid_classes
+      - extra_curri
+      - att_nursery
+      - wants_higheredu
+      - internet_access
+      - in_romantic
+    ordinal_var:
+      - mother_edu
+      - father_edu
+      - travel_time
+      - weekly_studytime
+      - past_classfailures
+      - famrelation_quality
+      - afterschool_time
+      - friend_time
+      - alc_consump_workday
+      - alc_consump_weekend
+      - health_status
+    target_var: third_grade
+    target_bins_labels:
+    - pass
+    - fail
+    variance_thresh: 0
+artifact_export: svm_model
+model_name: svm_model
