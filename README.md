@@ -142,6 +142,7 @@ The visualisations of the validation and test runs are also available in the Wei
 - `scikit-learn` is used to run the grid search and to define the model pipelines. This is different from the ML pipelines containing the workflow components.
 - `pytest` is used to perform data validation. This approach is admittedly code-heavy and clunky however. 
 - `logging` is used to generate helpful logs tracking the program while it runs.
+- `yapf` is used to conform the code to google python style guide
 
 ## Next Steps
 
