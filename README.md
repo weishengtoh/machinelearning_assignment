@@ -119,7 +119,7 @@ Run Summary:
     val_roc_auc_score: 0.94987
 ```
 The hyperparameters C and gamma were obtained via grid search C = [0.0001, 2, 4, 6, 8] and gamma = [2^-9, 2^-7, 2^-5, 2^-3, 2^-1]  
-The output above shows the best hyper parameters obtained, and the corresponding test and train summary metrics.  
+The output above shows the best hyper parameters obtained, and the corresponding train and validation summary metrics.  
 
 Test metrics (also appears in the terminal)
 ```shell
